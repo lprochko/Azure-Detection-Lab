@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 452" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5">
+<rect x="0" y="0" width="760" height="452" fill="#ffffff"/>
+<defs>
+<marker id="net-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6b7280"/></marker>
+<marker id="atk-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#dc2626"/></marker>
+</defs>
+<text x="24" y="28" font-size="15" font-weight="600" fill="#111827">How the lab fits together</text>
+<text x="24" y="48" font-size="11.5" fill="#6b7280">Private Azure network, an isolated honeypot, and CALDERA on your home Kali</text>
+<g><rect x="24" y="66" width="528" height="250" rx="8" fill="none" stroke="#6b7280" stroke-width="1.25"/><text x="40" y="90" font-size="13" font-weight="600" fill="#111827">Azure Virtual Network (VPC)</text></g>
+<g><rect x="40" y="104" width="496" height="112" rx="6" fill="#f3f4f6" stroke="#d1d5db"/><text x="52" y="122" font-size="11.5" font-weight="600" fill="#6b7280">lab subnet</text></g>
+<g><rect x="52" y="134" width="150" height="72" rx="8" fill="none" stroke="#6b7280" stroke-width="1.25"/><text x="127" y="168" text-anchor="middle" font-weight="600" fill="#111827">Domain Controller</text><text x="127" y="188" text-anchor="middle" font-size="10.5" fill="#6b7280">Win Server &#183; B2ms</text></g>
+<g><rect x="214" y="134" width="150" height="72" rx="8" fill="none" stroke="#6b7280" stroke-width="1.25"/><text x="289" y="168" text-anchor="middle" font-weight="600" fill="#111827">Workstation</text><text x="289" y="188" text-anchor="middle" font-size="10.5" fill="#6b7280">Windows &#183; B2s</text></g>
+<g><rect x="376" y="134" width="150" height="72" rx="8" fill="none" stroke="#6b7280" stroke-width="1.25"/><text x="451" y="168" text-anchor="middle" font-weight="600" fill="#111827">Linux target</text><text x="451" y="188" text-anchor="middle" font-size="10.5" fill="#6b7280">Ubuntu &#183; B1ms</text></g>
+<g><rect x="40" y="236" width="300" height="72" rx="6" fill="none" stroke="#dc2626" stroke-width="1.25" stroke-dasharray="4 4"/><text x="52" y="254" font-size="11.5" font-weight="600" fill="#dc2626">honeypot subnet &#8212; isolated, no route to lab</text><rect x="52" y="262" width="276" height="40" rx="8" fill="none" stroke="#6b7280" stroke-width="1.25"/><text x="190" y="280" text-anchor="middle" font-weight="600" fill="#111827">Cowrie honeypot</text><text x="190" y="296" text-anchor="middle" font-size="10.5" fill="#6b7280">SSH/Telnet decoy &#183; B1s (free)</text></g>
+<g><rect x="560" y="100" width="176" height="64" rx="8" fill="none" stroke="#6b7280" stroke-width="1.25"/><text x="648" y="130" text-anchor="middle" font-weight="600" fill="#111827">Kali &#8212; CALDERA C2</text><text x="648" y="150" text-anchor="middle" font-size="10.5" fill="#6b7280">your Mac (home)</text></g>
+<g><rect x="560" y="180" width="176" height="64" rx="8" fill="none" stroke="#6b7280" stroke-width="1.25"/><text x="648" y="210" text-anchor="middle" font-weight="600" fill="#111827">CrowdStrike Falcon</text><text x="648" y="230" text-anchor="middle" font-size="10.5" fill="#6b7280">cloud console</text></g>
+<g><rect x="560" y="260" width="176" height="56" rx="8" fill="none" stroke="#dc2626" stroke-width="1.25"/><text x="648" y="284" text-anchor="middle" font-weight="600" fill="#111827">Internet</text><text x="648" y="302" text-anchor="middle" font-size="10.5" fill="#6b7280">real attackers</text></g>
+<g><rect x="300" y="360" width="210" height="60" rx="8" fill="none" stroke="#6b7280" stroke-width="1.25"/><text x="405" y="386" text-anchor="middle" font-weight="600" fill="#111827">You</text><text x="405" y="406" text-anchor="middle" font-size="10.5" fill="#6b7280">home / school &#183; rotating IP</text></g>
+<g fill="none">
+<path d="M536 150 L560 128" stroke="#6b7280" stroke-width="1.25" marker-end="url(#net-arrow)"/>
+<path d="M536 194 L560 210" stroke="#6b7280" stroke-width="1.25" marker-end="url(#net-arrow)"/>
+<path d="M560 286 L330 284" stroke="#dc2626" stroke-width="1.25" marker-end="url(#atk-arrow)"/>
+<path d="M405 360 L405 218" stroke="#6b7280" stroke-width="1.25" marker-end="url(#net-arrow)"/>
+</g>
+<text x="648" y="92" text-anchor="middle" font-size="11.5" fill="#6b7280">agents &#8594; tunnel</text>
+<text x="648" y="173" text-anchor="middle" font-size="11.5" fill="#6b7280">Falcon telemetry</text>
+<text x="552" y="252" text-anchor="end" font-size="11.5" fill="#dc2626">SSH/Telnet brute force</text>
+<text x="414" y="300" text-anchor="start" font-size="11.5" fill="#6b7280">RDP/SSH &#183; your IP</text>
+</svg>
